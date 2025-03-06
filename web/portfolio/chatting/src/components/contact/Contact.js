@@ -22,7 +22,7 @@ const Contact = () => {
                 setemail("")
                 setmsg("")
             }else{
-                toast.error(res.data.message);
+                toast.success(res.data.message);
             }
         }catch (error){
             console.log(error);
