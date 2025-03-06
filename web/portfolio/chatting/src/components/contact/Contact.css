@@ -1,0 +1,134 @@
+/* Contact.css */
+.contact {
+  background-color: white;
+  height: auto;
+  padding: 0 250px;
+}
+.spaces{
+  height:30px;
+}
+.both-contact{
+  height: max-content;
+  background-color: white;
+}
+.input-contact{
+  height:max-content;
+}
+.container{
+  height: auto;
+}
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row1 .col {
+  flex: 1;
+  margin: 10px;
+}
+.contact-p {
+  font-size: 80%
+}
+.row1 .border-line {
+  height: 150px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: box-shadow 0.3s, background-color 0.3s; /* Added transition effect */
+}
+
+.row1 .border-line:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover */
+  background-color: rgb(187, 203, 209); /* Color change on hover */
+}
+.contact-input{
+  height : auto;
+}
+/* Add additional styles for contact-input if needed */
+
+.contact-text-field{
+  text-align: center;
+}
+
+::placeholder{
+  color:#bdbdbd;
+  opacity: 1.5;
+  font-weight: 200;
+}
+input,textarea{
+  padding:10px 12px;
+  border :1px solid lightgrey;
+  border-radius: 2px;
+  margin-top: 2px;
+  width:100%;
+  color:black;
+  font-size:1rem;
+  letter-spacing: 1px;
+}
+input:focus, textarea:focus{
+  box-shadow: none !important;
+  outline: 1px solid black !important;
+  outline-width: 0px;
+}
+button:focus{
+  box-shadow: none;
+  outline-width: 0px;
+}
+.button{
+      background-color: #1e1e2c;
+      color:white;
+      border-radius: 2px;
+      margin-top: 15px;
+      padding: 10px;
+}
+.button:hover{
+  background-color: #000;
+  color:white
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  
+  .input-contact{
+    height: 50vh;
+  }
+
+  .row1 {
+    flex-direction: column;
+  }
+
+  .contact {
+    padding: 0 10px;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .row1 .border-line {
+    height: auto;
+  }
+}
+#dark #Contact{
+  background-color: black;
+}
+#dark .contact-class{
+  height : auto;
+}
+#dark .both-contact{
+  height: max-content;
+  background-color: black;
+}
+#dark .row1 .border-line {
+  height: 150px;
+  background-color: rgb(37, 38, 39);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: box-shadow 0.3s, background-color 0.3s; /* Added transition effect */
+}

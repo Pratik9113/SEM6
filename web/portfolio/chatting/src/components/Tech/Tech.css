@@ -1,0 +1,79 @@
+.skill {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .skill-caption {
+    margin-bottom: 20px;
+  }
+  
+  .container10 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .row{
+    display: flex;
+  }
+  
+  .box-skill {
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+  
+  .box-skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .skill-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0px;
+    border-radius: 10%;
+  }
+  
+  .skill p{
+    font-size: 20px;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+
+  h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .content-space {
+    height: 50px;
+  }
+  
+
+  #dark .skill{
+    background-color: black;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #dark .box-skill {
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgb(220, 215, 215);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+  
+  #dark .box-skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }

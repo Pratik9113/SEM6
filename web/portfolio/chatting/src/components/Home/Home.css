@@ -1,0 +1,289 @@
+/* Home.css */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home-section{
+  height: 100vh;
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  height: auto; 
+  background-color: white;
+}
+
+.home-content {
+  padding: 20px; 
+  text-align: center;
+}
+.home-text{
+  color:black;
+}
+.home-content h3 {
+  color: black;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+.home-content h2 {
+  padding-top: 5px;
+  margin-left: 10px;
+  color: #2bc179;
+}
+
+.home-button {
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.home-button .btn-hire {
+  background-color: rgb(11, 11, 237);
+  color: black;
+  width: 150px;
+}
+
+.home-button .btn-hire:hover {
+  background-color: white;
+  color: rgb(11, 11, 237);
+  width: 160px;
+  transition: 1s;
+}
+
+.home-button .btn-cv {
+  background-color: rgb(237, 11, 11);
+  color: black;
+  margin-left: 15px;
+}
+.home-button .btn-cv:hover {
+  opacity: 80%;
+  background-color: black;
+  color: rgb(11, 11, 237);
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    padding: 5px; 
+  }
+
+  .home-content h3,
+  .home-content h2 {
+    margin-left: 0; 
+  }
+
+  .home-button {
+    margin-top: 10px; 
+    margin-left: 0;
+    text-align: center; 
+  }
+
+  .home-button .btn-hire,
+  .home-button .btn-cv {
+    margin-right: 0; 
+    margin-bottom: 10px; /* Add margin between buttons for smaller screens */
+    display: block; /* Make buttons full-width on smaller screens */
+  }
+}
+#dark .container-fluid{
+  background-color: black;
+}
+#dark h1{
+  color:aliceblue;
+}
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.about {
+  background-color: white;
+  min-height :500px;
+  display: flex; /* Add flex container property */
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content-main {
+  margin-top: 20px; /* Adjusted margin for smaller screens */
+  color: white;
+}
+
+.about-text {
+  text-decoration: solid;
+  padding: 10px; /* Add padding as needed */
+}
+
+.row .col-sm-4 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.col-sm-8{
+  padding:0;
+  margin:0;
+}
+.row {
+  background-color: white;
+  margin-left: 0px;
+}
+
+/* Profile Image Styling */
+.about-profile img {
+  margin-right: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 300px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-profile img:hover {
+  transform: scale(1.1);
+}
+
+/* About Section Styling */
+.about-section{
+  background-color: white;
+}
+.about-section-main {
+  background-color: white;
+  margin-top: 20px; 
+  color: black;
+}
+
+.text {
+  color: black;
+}
+
+/* About Text Styling */
+.about-text-main {
+  text-decoration: solid;
+  font-size: 1.2rem;
+}
+
+/* Expertise Section Styling */
+.col-sm-4 {
+  padding: 20px;
+  background-color: #2bc179;
+  border: 2px solid white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.col-sm-4:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* skill set */
+.skill-text{
+  color:white;
+  padding-top:20px;
+ 
+  text-decoration:black;
+}/*
+.skill-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:60px;
+  background-color: #2bc179;
+  border : black 1px;
+} */
+
+.skill-section {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; 
+}
+
+.skill-box  {
+  flex: 1;
+  padding: 10px;
+  text-align: left; /* Center text within each box */
+}
+.profiles{
+  display: flex;
+  
+}
+.leetcode-logo img,.linkedin-logo img,.github-logo img{
+  width:30px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 60px;
+  border : 2px solid black;
+    width: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    text-align: center;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 572px) {
+  .row {
+      margin: 0;
+      flex-direction: column; 
+  }
+  .about{
+      padding:0.5rem;
+      height: auto;
+  }
+  .about-section{
+      padding:0;
+      margin: 0;
+  }
+  .about-profile img {
+      width:100%; 
+      height: auto;
+  }
+}
+
+
+/**** dark mode */
+
+#dark .about,#dark .row .col-sm-4, #dark .row, #dark .about-section, #dark .about-section-main{
+  background-color: black;
+}
+
+#dark .about-section-main {
+  color: white;
+}
+#dark .dark-text {
+  color:white;
+}
+
+#dark .about-content{
+  color:white;
+}
+
+#dark .col-sm-4{
+  border-color: black;
+}
