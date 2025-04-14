@@ -11,8 +11,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   List<Map<String, String>> messages = [];
-  final String groqApiKey =
-      "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";
+  final String groqApiKey = dotenv.env['GROQ_API']!;
 
   Future<void> sendMessage(String userMessage) async {
     setState(() {
