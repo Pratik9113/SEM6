@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175543833376",
+    "project_id": "fir-questit",
+    "storage_bucket": "fir-questit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175543833376:android:abc1884d8d271ff983fd45",
+        "android_client_info": {
+          "package_name": "com.example.questit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDttzfGDuW8aBctlRJ5b-RxMhQGRn5siXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

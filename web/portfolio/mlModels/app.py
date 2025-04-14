@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
@@ -16,14 +16,13 @@ app.config['MAIL_DEFAULT_SENDER'] = '2022.pratik.patil@ves.ac.in'
 
 mail = Mail(app)
 
-def send_email(to, subject, text, deadline):
-    """ Function to send an email automatically """
+def send_email(to, subject, text):
     try:
         msg = Message(
-            subject=f"Portfolio Reminder: {subject}",
+            subject=f"User Name: {subject}",
             sender=app.config['MAIL_DEFAULT_SENDER'],
             recipients=[to],
-            body=f"This is a reminder that a new user posted on your contact form  '{subject}' time at {deadline}.\n\nDescription: {text}"
+            body=f"This is a reminder that a new user posted on your contact form  '{subject}'.\n\nDescription: {text}"
         )
         mail.send(msg)
         print(f"Email sent to {to}")
@@ -35,11 +34,10 @@ def submit_task():
     """ Route that receives task details and sends an email """
     data = request.get_json()
     email = data.get('email') 
-    task_name = data.get('task_name')
-    task_desc = data.get('task_desc')
-    deadline = data.get('deadline')
-    print(f"Task Received: {task_name}, Deadline: {deadline}, Recipient: {email}")
-    send_email(email, task_name, task_desc, deadline)
+    name = data.get('name')
+    msg = data.get('msg')
+    print(f"User Prompt Received: {msg}, {name}, Recipient: {email}")
+    send_email(email, name, msg)
     return jsonify({"status": "success", "message": "Email sent!"})
 
 if __name__ == '__main__':
